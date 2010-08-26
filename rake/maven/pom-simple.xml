@@ -1,0 +1,9 @@
+<plugin>
+  <executions>
+    <execution>
+      <id>my-custom-resource-step</id>
+      <phase>generate-resources</phase>
+      <goals><goal>rake</goal></goals>
+    </execution>
+  </executions>
+</plugin>

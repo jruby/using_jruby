@@ -1,0 +1,12 @@
+<plugin>
+  <executions>
+    <execution>
+      <id>install-gems</id>
+      <phase>generate-resources</phase>
+      <goals><goal>install-gems</goal></goals>
+      <configuration>
+        <gems>activerecord activerecord-jdbc-adapter</gems>
+      </configuration>
+    </execution>
+  </executions>
+</plugin>
