@@ -1,18 +1,17 @@
 require 'rubygems'
 require 'active_record'
 
-b = Blog.new :author => "Ola Bini"
-b.title = "My first blog"
-b.save
+b1 = Blog.new :author => 'Ola Bini'
+b1.title = 'My first blog'
+b1.save
 
-Blog.create :title => "My second blog"
+Blog.create :title => 'My second blog'
 
-b = Blog.find(1)
-b.title = "My updated blog"
-b.posts.create(:title => "First post", 
-               :body =>"This is a post about something")
-b.save
+b2 = Blog.find(2)
+b2.title = 'My second blog, revisited'
+b2.posts.create(:title => 'First post',
+                :body  => 'This is a post about something')
+b2.save
 
-blogs = Blog.find(:all)
-blogs[0].destroy
-
+my_blogs = Blog.where(:author => 'Ola Bini')
+my_blogs.first.destroy

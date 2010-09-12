@@ -7,19 +7,31 @@ Ribs::DB.define do |db|
   db.driver = 'com.mysql.jdbc.Driver'
 end
 
+# START:map
 class Blog
-  Ribs! :table => 'wp_blog', 
-        :identity_map => false do |blog|
+  Ribs! :table => 'wp_blog',
+        :identity_map => true do |blog|
+
+    # ... mappings go here ...
+# END:map
+
+    # START:properties
     blog.blog_id.primary_key!
+    blog.title :column => :blog_title
+    # END:properties
 
-    blog.title     :column => :blog_title
 
+    # START:associations
     blog.belongs_to    Owner
     blog.has_one       Layout, :name => :look
     blog.has_n         :posts
-#   blog.has_n         Post
-    
+    # END:associations
+
+    # START:skip
     blog.stats.avoid!
     blog.auth :avoid, :default => 'abc'
+    # END:skip
+# START:map
   end
 end
+# END:map

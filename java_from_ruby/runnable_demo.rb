@@ -3,7 +3,7 @@ require 'java'
 java_import java.lang.Runnable
 
 class Foo
-  include Runnable
+  include Runnable # <label id="code.runnable.include"/>
 
   def run
     puts "foo"
