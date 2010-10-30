@@ -8,7 +8,7 @@ java_import java.util.Set
 # START:mocha
 require 'mocha'
 
-Spec::Runner.configure do |config|
+RSpec.configure do |config|
   config.mock_with :mocha
 end
 # END:mocha

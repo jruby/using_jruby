@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project name="hello" default="hello">
+  <taskdef name="rakeimport" classname="org.jruby.ant.RakeImport"/>
+  <rakeimport/>
+
+  <target name="goodbye_from_ant" depends="hello_from_rake">
+    <echo message="Goodbye from Ant!"/>
+  </target>
+</project>

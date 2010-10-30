@@ -5,6 +5,7 @@ require 'rubeus'
 require 'redcloth'
 
 java_import javax.swing.DefaultListModel
+java_import javax.swing.text.html.HTMLEditorKit
 
 Rubeus::Swing.irb
 # END:import

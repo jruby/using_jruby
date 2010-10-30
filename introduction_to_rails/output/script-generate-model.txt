@@ -1,6 +1,6 @@
 $ jruby script/rails generate model Restaurant
       invoke  active_record
-      create    db/migrate/20100901041454_create_restaurants.rb
+      create    db/migrate/20101014180911_create_restaurants.rb
       create    app/models/restaurant.rb
       invoke    test_unit
       create      test/unit/restaurant_test.rb

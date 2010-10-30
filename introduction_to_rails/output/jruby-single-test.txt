@@ -2,6 +2,6 @@ $ jruby -Itest test/unit/restaurant_test.rb
 Loaded suite test/unit/restaurant_test
 Started
 .
-Finished in 0.137 seconds.
+Finished in 0.292 seconds.
 
 1 tests, 1 assertions, 0 failures, 0 errors

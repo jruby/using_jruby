@@ -1,7 +1,7 @@
 # START:truncated
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -42,6 +42,6 @@ group :development, :test do
   gem 'webrat'
   gem 'cucumber-rails'
   gem 'cucumber'
-  gem 'rspec-rails', '>= 2.0.0.beta.20'
+  gem 'rspec-rails', '~> 2.0'
 end
 # END:cucumber

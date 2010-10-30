@@ -7,7 +7,7 @@
       <plugin>
         <groupId>org.jruby.plugins</groupId>
         <artifactId>jruby-rake-plugin</artifactId>
-        <version>1.4.0</version>
+        <version>1.5.3</version>
       </plugin>
     </plugins>
   </build>

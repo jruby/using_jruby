@@ -14,6 +14,6 @@ end
 FFI::MemoryPointer.new(:char, 1000) do |buffer|
   hwnd = User32.GetForegroundWindow
   User32.GetWindowTextA hwnd, buffer, buffer.size
-  p buffer.get_string
+  p buffer.get_string(0)
   # >> "jruby - Cmd"
 end

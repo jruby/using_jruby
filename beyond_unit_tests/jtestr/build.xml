@@ -14,7 +14,7 @@
       name="jtestr-server"
       classname="org.jtestr.ant.JtestRAntServer"
       classpath="lib/jtestr.jar"/>
-  
+
   <target name="test" description="Runs all tests">
     <jtestr/>
   </target>

@@ -6,9 +6,9 @@
       <goals><goal>rake</goal></goals>
       <configuration>
         <script>
-          require 'spec/rake/spectask'
-          Spec::Rake::SpecTask.new do |t|
-            t.spec_files = FileList['src/spec/ruby/**/*_spec.rb']
+          require 'rspec/core/raketask'
+          RSpec::Core::RakeTask.new do |t|
+            t.pattern = 'src/spec/ruby/**/*_spec.rb'
           end
           task :default => :spec
         </script>

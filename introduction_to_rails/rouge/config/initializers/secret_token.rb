@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Rouge::Application.config.secret_token = 'f124a4af28ff073013bb8b6d36173a131e325372040494508f12ec13459d5d24ac5bf62ee1a7b00cf08c17a4927176caee01bdaa330bf1de1569efbaead0c732'
+Rouge::Application.config.secret_token = 'e90f5d21dfadd621c1c942db3e5f9de510ec2565b02afeec298d832adc1a368656ed69f3f749b10e720e086a77794da04c948c6b37ef8457312cf311875abfbd'

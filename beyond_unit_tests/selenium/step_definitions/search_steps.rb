@@ -1,13 +1,13 @@
-Given /^I am on the Google home page$/ do
-  $browser.open 'http://www.google.com/webhp'
+Given /^I am on the search home page$/ do
+  $browser.open 'http://www.yahoo.com'
 end
 
 When /^I search for "([^\"]*)"$/ do |term|
-  $browser.type 'q', term
-  $browser.click 'btnG'
-  $browser.wait_for_page_to_load 5000
+  $browser.type 'p', term
+  $browser.click 'search-submit'
+  $browser.wait_for_page_to_load 10
 end
 
-Then /^the page title should be "([^\"]*)"$/ do |title|
-  $browser.get_title.should == title
+Then /^the page title should begin with "([^\"]*)"$/ do |title|
+  $browser.get_title[0...title.length].should == title
 end
