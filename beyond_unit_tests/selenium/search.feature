@@ -1,4 +1,4 @@
-Feature: Google search
+Feature: Web search
 
   In order to tell my searches apart
   As a person who browses in multiple tabs

@@ -15,7 +15,7 @@ class HashMapTestCase < Test::Unit::TestCase
       assert @map.isEmpty
     end
 
-    should "should raise error on entryset iterator next" do
+    should "raise error on entryset iterator next" do
       assert_raises(NativeException) do
         @map.entrySet.iterator.next
       end
@@ -28,6 +28,10 @@ class HashMapTestCase < Test::Unit::TestCase
 
       should "not be empty" do
         assert !@map.isEmpty
+      end
+
+      should "have size one" do
+        assert_equal 1, @map.size
       end
 
       should "associate a value with a key" do
