@@ -40,7 +40,7 @@ end
 # START:big_jar
 desc 'Combine app, launcher, and JRuby into one jar'
 task :big_jar => [:install_gems, :build_launcher, :extract_jruby] do
-  sh 'jar -cfm scrape.jar big.manifest Launcher.class scrape.rb \
-      -C vendor . -C tmp .'
+  sh "jar -cfm scrape.jar big.manifest Launcher.class scrape.rb \
+      -C vendor . -C tmp ."
 end
 # END:big_jar
